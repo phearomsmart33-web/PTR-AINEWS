@@ -1,31 +1,13 @@
 {
-  "siteName": "PTR.AINEWS",
-  "tagline": "AI Discovery • Knowledge • Logistics • Real Impact",
-  "defaultLanguage": "en",
-  "languages": [
-    "en",
-    "km"
-  ],
-  "environment": "staging",
-  "editorialLabels": [
-    "VERIFIED",
-    "EXPLAINER",
-    "ANALYSIS",
-    "GUIDE",
-    "DEVELOPING"
-  ],
-  "sections": [
-    "AI Discovery",
-    "AI Technology",
-    "AI Logistics",
-    "Business & Industry",
-    "Resources"
-  ],
-  "features": {
-    "search": true,
-    "newsletter": true,
-    "advertising": true,
-    "sourceTransparency": true
-  },
-  "productionDomainConnected": false
+  "siteName":"PTR.AINEWS",
+  "version":"2.0-editorial-preview",
+  "tagline":"AI News • Knowledge • Learning • Logistics • Business",
+  "defaultLanguage":"en",
+  "languages":["en","km","zh"],
+  "environment":"v2-staging",
+  "editorialLabels":["VERIFIED","EXPLAINER","ANALYSIS","GUIDE","DEVELOPING"],
+  "sections":["Latest AI News","AI Discovery","AI Technology","AI Logistics","Business","Learning","Risk & Safety","Resources"],
+  "features":{"search":true,"newsletter":false,"advertising":true,"sourceTransparency":true,"sponsorInventory":true,"multilingualReady":true},
+  "productionDomainConnected":false,
+  "baselineV1Branch":"main"
 }
