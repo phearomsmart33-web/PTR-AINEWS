@@ -1,0 +1,8 @@
+{
+  "name": "PTR.AINEWS",
+  "short_name": "PTR.AINEWS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#07132f"
+}
