@@ -1,1 +1,34 @@
-const input=document.getElementById('search');const cards=[...document.querySelectorAll('#cards article')];const empty=document.getElementById('no-results');input?.addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();let n=0;cards.forEach(c=>{const show=!q||(c.innerText+' '+(c.dataset.search||'')).toLowerCase().includes(q);c.hidden=!show;if(show)n++});if(empty)empty.hidden=n!==0});document.getElementById('lang')?.addEventListener('click',()=>alert('Khmer publishing is staged as a second language layer. Factual master articles will be verified before translation.'));
+const input=document.getElementById('search');
+const topInput=document.getElementById('search-top');
+const cards=[...document.querySelectorAll('#cards article')];
+const empty=document.getElementById('no-results');
+
+function filterCards(value){
+  const q=value.trim().toLowerCase();
+  let n=0;
+  cards.forEach(card=>{
+    const show=!q||(card.innerText+' '+(card.dataset.search||'')).toLowerCase().includes(q);
+    card.hidden=!show;
+    if(show)n++;
+  });
+  if(empty)empty.hidden=n!==0;
+}
+
+input?.addEventListener('input',event=>{
+  filterCards(event.target.value);
+  if(topInput&&topInput.value!==event.target.value)topInput.value=event.target.value;
+});
+
+topInput?.addEventListener('input',event=>{
+  if(input){
+    input.value=event.target.value;
+    filterCards(event.target.value);
+  }
+});
+
+topInput?.addEventListener('keydown',event=>{
+  if(event.key==='Enter'){
+    document.getElementById('latest')?.scrollIntoView({behavior:'smooth',block:'start'});
+    input?.focus();
+  }
+});
