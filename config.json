@@ -1,0 +1,31 @@
+{
+  "siteName": "PTR.AINEWS",
+  "tagline": "AI Discovery • Knowledge • Logistics • Real Impact",
+  "defaultLanguage": "en",
+  "languages": [
+    "en",
+    "km"
+  ],
+  "environment": "staging",
+  "editorialLabels": [
+    "VERIFIED",
+    "EXPLAINER",
+    "ANALYSIS",
+    "GUIDE",
+    "DEVELOPING"
+  ],
+  "sections": [
+    "AI Discovery",
+    "AI Technology",
+    "AI Logistics",
+    "Business & Industry",
+    "Resources"
+  ],
+  "features": {
+    "search": true,
+    "newsletter": true,
+    "advertising": true,
+    "sourceTransparency": true
+  },
+  "productionDomainConnected": false
+}
