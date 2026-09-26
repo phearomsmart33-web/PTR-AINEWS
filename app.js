@@ -1,0 +1,1 @@
+document.getElementById('lang')?.addEventListener('click',()=>{alert('Khmer content layer is prepared for the next content phase. English remains the factual master during staging.');});
