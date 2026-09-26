@@ -40,3 +40,16 @@ html,body{max-width:100%;overflow-x:hidden}.lead>*,.news-layout>*,.split-section
 
 /* Sidebar sponsor poster fit correction — fill block using original image proportions */
 .poster-rotator{aspect-ratio:auto;height:auto;min-height:0!important;display:grid!important;place-items:stretch;background:#fff}.poster-slide{position:relative!important;grid-area:1/1;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center;background:#fff;display:block}.poster-two{position:relative!important}.poster-label{grid-area:1/1;align-self:start;justify-self:start}
+
+/* V2 editorial refresh — cool-eye soft pink news layout */
+:root{--ptr-pink:#fff4f7;--ptr-pink-2:#fdebf1;--ptr-card:#fffafb;--ptr-radius:14px;--ptr-shadow:0 8px 28px rgba(8,21,47,.06)}
+body{background:linear-gradient(180deg,var(--ptr-pink) 0,#fff 38%,#fff 100%)}
+header,.brandbar{background:rgba(255,250,251,.92)}
+nav{background:rgba(255,255,255,.94);border-radius:var(--ptr-radius);box-shadow:var(--ptr-shadow)}
+.hero,.news-layout,.topics,.sponsor-zone,.risk-grid{border-radius:var(--ptr-radius)}
+.story,.featured-story,.rail-card,.sourcebox,.ptr-brief,.article-v2{background:var(--ptr-card)}
+.story,.featured-story,.rail-card,.ptr-brief,.sourcebox{border-radius:12px}
+.story img,.featured-story img{border-radius:10px}
+.story{transition:transform .18s ease,box-shadow .18s ease}.story:hover{transform:translateY(-2px);box-shadow:var(--ptr-shadow)}
+.poster-rotator{border-radius:12px;box-shadow:var(--ptr-shadow)}
+@media(max-width:850px){nav{border-radius:0}.hero,.news-layout,.topics,.sponsor-zone,.risk-grid{border-radius:0}}
